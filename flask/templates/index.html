@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" >
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">StegOptions</a>
+                <div class="dropdown-content">
+                    <a href="#">Image</a>
+                    <a href="{{ url_for('upload') }}">Text</a>
+                    <a href="#">Encrypt</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="heading1">Welcome to Stegonography!!!</h1>
+        <div class="image-container">
+            <div class="placeholder-image">
+                <!-- <p><img src="{{ url_for('static', filename='images/cyber_pic1.jpg')}}" alt=""></p> -->
+            </div>
+            <div class="placeholder-image">
+                <p>Placeholder for Image 2</p>
+            </div>
+            <div class="placeholder-image">
+                <p>Placeholder for Image 3</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

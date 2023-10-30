@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Upload Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='text_in_image.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <input type="file" id="imageUpload" name="imageUpload" accept=".png, .jpg, .jpeg">
+    </div>
+    <div class="container">
+        <textarea id="text-result" placeholder="Text Result"></textarea>
+    </div>
+    <div class="container">
+        <img id="image-result" src="#" alt="Image Result" width="300" height="200">
+    </div>
+</body>
+
+</html>
